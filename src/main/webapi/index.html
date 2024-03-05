@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelerías Heredia - Página Principal</title>
+    <link href="estilos.css" rel="stylesheet">
+    <script src="funciones-index.js"></script>
+</head>
+<body>
+<div class="navbar">
+    <a style="background-color:#ccc;" href="#" class="active">Inicio</a>
+    <a href="pasteles.html">Ver Todos los Pasteles</a>
+    <a href="proveedores.html">Proveedores</a>
+    <a href="almacen.html">Almacén</a>
+</div>
+
+<div class="container">
+    <h1>Pastelería Heredia - Admin</h1>
+    <hr>
+    <div class="section">
+        <h2>Buscar Pastel por ID</h2>
+        <p>Encuentra un pastel específico ingresando su ID.</p>
+        <form id="buscarPastelForm">
+            <label for="pastelId">ID del Pastel:</label>
+            <input type="text" id="pastelId" name="id" required>
+            <button type="button" class="button" onclick="buscarPastel()">Buscar</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+</div>
+</body>
+</html>

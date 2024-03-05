@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasteles Heredia - Almacén</title>
+  <link href="estilos.css" rel="stylesheet">
+  <script src="funciones-almacen.js"></script>
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Inicio</a>
+  <a href="pasteles.html">Ver Todos los Pasteles</a>
+  <a href="proveedores.html">Proveedores</a>
+  <a style="background-color:#ccc;" href="#">Almacén</a>
+</div>
+  <div class="container">
+    <h1>Lista de pasteles</h1>
+    <div id="pasteles-container"></div>
+  </div>
+  <script>
+window.onload = function() {
+    obtenerPasteleriasPaginado(1, 10); // Obtener la primera página de 10 pasteles al cargar la página
+  };
+  </script>
+</body>
+</html>

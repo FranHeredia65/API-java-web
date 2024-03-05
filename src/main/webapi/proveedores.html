@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasteles Heredia - Ver todos</title>
+  <link href="estilos.css" rel="stylesheet">
+  <script src="funciones-proveedores.js"></script>
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Inicio</a>
+  <a href="pasteles.html">Ver Todos los Pasteles</a>
+  <a style="background-color:#ccc;" href="#">Proveedores</a>
+  <a href="almacen.html">Almacén</a>
+</div>
+<div class="container">
+<h1>Configuración pasteles & proveedores</h1>
+<h2>Asignar Proveedor:</h2>
+<form id="asignarProveedorForm">
+  <label for="idProveedor">ID del Proveedor:</label>
+  <input type="text" id="idProveedor" name="idProveedor" required><br>
+  <label for="idPasteleria">ID de la Pastelería:</label>
+  <input type="text" id="idPasteleria" name="idPasteleria" required><br>
+  <button type="button" onclick="asignarProveedor()">Asignar</button>
+</form>
+
+<h2>Obtener Proveedor de Pastelería:</h2>
+<form id="obtenerProveedorForm">
+  <label for="idPasteleriaObtener">ID de la Pastelería:</label>
+  <input type="text" id="idPasteleriaObtener" name="idPasteleriaObtener" required><br>
+  <button type="button" onclick="obtenerProveedor()">Obtener Proveedor</button>
+</form>
+
+<div id="resultado"></div>
+  </div>
+</body>
+</html>

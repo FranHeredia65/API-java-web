@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasteles Heredia - Pasteles</title>
+  <link href="estilos.css" rel="stylesheet">
+  <script src="funciones-pasteles.js"></script>
+</head>
+<body style="background-image: url('https://png.pngtree.com/background/20211215/original/pngtree-pink-pastry-three-dimensional-background-picture-image_1461883.jpg');">
+<div class="navbar">
+  <a href="index.html">Inicio</a>
+  <a style="background-color:#ccc;" href="#">Ver Todos los Pasteles</a>
+  <a href="proveedores.html">Proveedores</a>
+  <a href="almacen.html">Almacén</a>
+</div>
+<div class="container">
+  <h1>Lista de pasteles</h1>
+  <input type="text" id="search-input" placeholder="Buscar pastel por nombre">
+  <button onclick="buscarPasteles()">Buscar</button>
+  <ul id="pastelerias-list"></ul>
+  <a href="index.html" id="back-button">Volver al inicio</a>
+</div>
+
+<script>
+  window.onload = function() {
+    obtenerPastelerias();
+  }
+</script>
+</body>
+</html>
